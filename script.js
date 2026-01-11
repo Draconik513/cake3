@@ -11,7 +11,7 @@ let analyser;
 let micSource;
 let isExtinguished = false;
 let blowDetectedTimer; // Untuk melacak durasi tiupan
-const BLOW_THRESHOLD_VOLUME = 30; // Volume minimum untuk dianggap tiupan
+const BLOW_THRESHOLD_VOLUME = 10; // Volume minimum untuk dianggap tiupan
 const SUSTAINED_BLOW_DURATION = 1000; // Durasi tiupan (ms) agar api padam
 const PARTICLE_EMIT_INTERVAL = 55; // Interval emisi partikel saat ditiup (ms)
 let particleInterval; // Variabel untuk menyimpan interval emisi partikel
@@ -139,3 +139,4 @@ function extinguishFlame() {
 }
 
 window.onload = initMic;
+
